@@ -1,0 +1,17 @@
+<h1>All our Flats (<%= @flats.count %>)</h1>
+
+<div class="d-flex gap-4 justify-content-center">
+  <%  @flats.each do |flat| %>
+    <div class="flat-container bg-light shadow-sm p-3 justify-content-space-between style="width: 300px; border-radius: 8px;">
+      <h4><%= flat.name %></h4>
+      <p><%= flat.address %></p>
+      <div class="price-person-container d-flex justify-content-around">
+        <span><%= flat.number_of_guests %></span>
+        <span><%= flat.price_per_night %></span>
+      </div>
+      <div id="footer" class="flat_footer bg-white p-2">
+        <p>some buttons here</p>
+      </div>
+    </div>
+  <% end %>
+</div>

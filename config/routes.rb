@@ -7,4 +7,17 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  resources :flats
 end
+
+
+# Prefix Verb   URI Pattern                            Controller#Action
+# rails_health_check GET    /up(.:format)                          rails/health#show
+#              flats GET    /flats(.:format)                       flats#index
+#                    POST   /flats(.:format)                       flats#create
+#           new_flat GET    /flats/new(.:format)                   flats#new
+#          edit_flat GET    /flats/:id/edit(.:format)              flats#edit
+#               flat GET    /flats/:id(.:format)                   flats#show
+#                    PATCH  /flats/:id(.:format)                   flats#update
+#                    PUT    /flats/:id(.:format)                   flats#update
+#                    DELETE /flats/:id(.:format)                   flats#destroy
